@@ -1,0 +1,7 @@
+#page-header {padding-top:10px;}
+
+[[setting:hideloginpanelbegin]]
+.loginpanel, .loginbox .signuppanel {display:none;}
+.loginbox .potentialidps .potentialidplist{margin-left:0;}
+.loginbox .potentialidps .potentialidplist div{text-align:center}
+[[setting:hideloginpanelend]]
