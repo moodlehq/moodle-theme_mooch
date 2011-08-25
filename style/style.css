@@ -1,0 +1,63 @@
+ #region-main .hubcoursedescription {text-align: justify; text-justify: newspaper;}
+
+ #region-main .hubcourseresult {
+    background:none repeat scroll 0 0;
+    clear:both;
+    margin:30px auto 0;
+    z-index:90;
+    width: 95%;
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 0px;
+}
+
+ #region-main .hubcoursetitle {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.546875) 0px 0px 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.546875) 0px 0px 2px;
+    background: #EBB42B;
+    left: -15px;
+    position: relative;
+    z-index: 100;
+    border: 0px;
+    font-size: 100%;
+    margin: 0px;
+    outline: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-align: left;
+    font-style:bold;
+    font-weight:normal;
+    line-height:1.2em;
+    font-size: 140%;
+    width: 102%;
+    text-indent: 15px;
+}
+
+ #region-main .additionaldesc {font-size: 80%; color:  #BE982F; font-size: bold;}
+
+a {color: #A47900;}
+
+ #region-main .hubcoursedownload {
+    display: inline-block;
+    padding: 5px 8px 6px;
+    color: #000;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    background-color: #fed972;
+    margin-left: 6px;
+    font-size: 95%;
+}
+
+ #region-main .hubcoursedownload:hover {background-color: #fdba00;}

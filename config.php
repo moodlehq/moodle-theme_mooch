@@ -8,7 +8,7 @@ $THEME->parents = array(
 );
 
 $THEME->sheets = array(
-	'core',
+	'core', 'style'
 );
 
 $THEME->parents_exclude_sheets = array(
