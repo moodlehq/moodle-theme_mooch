@@ -49,9 +49,9 @@ echo $OUTPUT->doctype() ?>
                         </div>
                         <div class="headermenu"><?php
                             echo $OUTPUT->login_info();
-                                if (!empty($PAGE->layout_options['langmenu'])) {
+                                //if (!empty($PAGE->layout_options['langmenu'])) {
                                     echo $OUTPUT->lang_menu();
-                                }
+                                //}
                             echo $PAGE->headingmenu ?>
                         </div>
                     </div>
