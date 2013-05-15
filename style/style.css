@@ -1,4 +1,6 @@
- #region-main .hubcoursedescription {text-align: justify; text-justify: newspaper;}
+#page .hubcoursedescription {line-height: 1.7}
+
+#region-main .hubcoursedescription {line-height: 1.7; text-align: justify; text-justify: newspaper;}
 
  #region-main .hubcourseresult {
     background:none repeat scroll 0 0;
@@ -12,9 +14,9 @@
 }
 
  #region-main .hubcoursetitle {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.546875) 0px 0px 4px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.546875) 0px 0px 2px;
-    background: #EBB42B;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.546875) 0px 0px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.546875) 0px 0px 0px;
+    background: white;
     left: -15px;
     position: relative;
     z-index: 100;
@@ -25,39 +27,42 @@
     padding: 0px;
     vertical-align: baseline;
     font-size: 30px;
-    color: #FFFFFF;
+    color: #F98012;
     padding-top: 6px;
     padding-bottom: 6px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.2);
     text-align: left;
-    font-style:bold;
+    font-style:normal;
     font-weight:normal;
     line-height:1.2em;
     font-size: 140%;
     width: 102%;
-    text-indent: 15px;
+    text-indent: 0px;
+    z-index: 1;
 }
 
- #region-main .additionaldesc {font-size: 80%; color:  #BE982F; font-size: bold;}
+ #region-main .additionaldesc {padding: 13px 5px 5px 0px; font-size: 80%; color:  #999999; font-size: bold;}
 
-a {color: #A47900;}
+
+#page-site-index .seecreatornotes {color: #F98012;}
+
+a, a:hover, a:visited, a:active {color: #F98012;}
 
  #region-main .hubcoursedownload {
     display: inline-block;
     padding: 5px 8px 6px;
     color: #000;
     text-decoration: none;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-box-shadow: 0 0px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.6);
     border-bottom: 1px solid rgba(0,0,0,0.25);
     position: relative;
     cursor: pointer;
-    background-color: #fed972;
+    background-color: rgb(255, 242, 224);
     margin-left: 6px;
     font-size: 95%;
 }
 
- #region-main .hubcoursedownload:hover {background-color: #fdba00;}
+ #region-main .hubcoursedownload:hover {background-color: rgb(248, 156, 57);}
