@@ -1,0 +1,224 @@
+// Sitebar related styling is kept in a separate LESS and CSS files so we are
+// able to generate the style to be used at another sites.
+
+@themeColorOrange:                      #f98012;    // .org
+@themeColorBlue:                        #4653b4;    // dev and  tracker
+@themeColorPurple:                      #6c336d;    // docs
+@themeColorGreen:                       #6eab2e;    // downloads
+@themeColorGrayLighter:                 #999999;    // demo
+@themeColorRed:                         #a62a3e;    // translation
+@themeColorRedOrange:                   #fb4b28;    // .net
+
+@themeColor: @themeColorRedOrange;
+
+#moodlesitestopnavbar {
+
+    // These are similar variables from bootstrap used for consistency but used is exclusive to sitebar only
+    @baseFontSize:                          14px;
+    @fontSizeSmall:                         @baseFontSize * 0.85;
+    @baseLineHeight:                        20px;
+    @sansFontFamily:                        "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    @navbarHeight:                          40px;
+    @navbarBackground:                      #1b1b1b;
+    @navbarLinkColor:                       #ffffff;
+    @navbarLinkBackgroundActive:            @themeColor;
+
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    min-height: @navbarHeight;
+    background-color: @navbarBackground;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    border-bottom: 5px solid @themeColor;
+    box-shadow: 0 0 20px rgba(0,0,0,.75);
+
+    .navbar-container {
+        position: relative;
+        max-width: 1680px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: block;
+    }
+    .sitelogo {
+        display: none;
+        padding-top: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -20px;
+        position: absolute;
+        top: 0;
+        img {
+            height: 25px;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        float: right;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            float: left;
+            line-height: @baseLineHeight;
+            a {
+                font-family: @sansFontFamily;
+                font-size: @fontSizeSmall;
+                display: block;
+                padding: ((@navbarHeight - @baseLineHeight) / 2) 15px;
+                color: @navbarLinkColor;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-shadow: none;
+                background-repeat: no-repeat;
+                background-position: center center;
+                &:hover {
+                }
+            }
+
+            &.home {
+                margin-left: 104px;
+                a {
+                    background-image: url([[pix:theme|sitebar/home]]);
+                    width: 20px;
+                    height: 20px;
+                    > span {
+                        display: none;
+                    }
+                    &:hover {
+                        background-color: @themeColorOrange;
+                    }
+                }
+            }
+
+            &.documentation {
+                a {
+                    &:hover {
+                        background-color: @themeColorPurple;
+                    }
+                }
+            }
+
+            &.download {
+                a {
+                    &:hover {
+                        background-color: @themeColorGreen;
+                    }
+                }
+            }
+
+            &.demo {
+                a {
+                    &:hover {
+                        background-color: @themeColorGrayLighter;
+                    }
+                }
+            }
+
+            &.tracker {
+                a {
+                    &:hover {
+                        background-color: @themeColorBlue;
+                    }
+                }
+            }
+
+            &.development {
+                a {
+                    &:hover {
+                        background-color: @themeColorBlue;
+                    }
+                }
+            }
+
+            &.translation {
+                a {
+                    &:hover {
+                        background-color: @themeColorRed;
+                    }
+                }
+            }
+
+            &.moodlenet {
+                a {
+                    background-color: @themeColorRedOrange;
+                }
+            }
+
+            &.search {
+                a {
+                    background-image: url([[pix:theme|sitebar/search]]);
+                    width: 20px;
+                    height: 20px;
+                    > span {
+                        display: none;
+                    }
+                    &:hover {
+                        background-color: @themeColorOrange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#wrapper {
+    border-top: none; // undo arialist's styling
+    padding-top: 60px; // leave space for the sitebar
+}
+
+.dir-rtl {
+    // TODO
+}
+
+@media (max-width: 979px) {
+    #moodlesitestopnavbar {
+        // margin: -5px; // Undo clean's behaviour to add padding:5px to our wrapper
+        padding: 0;
+        .navbar-container {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        ul {
+            li {
+                a {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #moodlesitestopnavbar {
+        ul {
+            li.documentation {
+                a {
+                    > span:first-child {
+                        display: none;
+                    }
+                    .placeholder:after {
+                        content:"Docs";
+                    }
+                }
+            }
+            li.development {
+                a {
+                    > span:first-child {
+                        display: none;
+                    }
+                    .placeholder:after {
+                        content:"Dev";
+                    }
+                }
+            }
+        }
+    }
+}
