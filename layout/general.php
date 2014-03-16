@@ -25,9 +25,14 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join(' ', $bodyclasses)) ?>">
+<nav role="navigation">
+    <?php include(__DIR__.'/../sitebar/sitebar.html'); ?>
+</nav>
+
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
 <?php if ($hascustommenu) { ?>
