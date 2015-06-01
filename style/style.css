@@ -66,3 +66,6 @@ a, a:hover, a:visited, a:active {color: #F98012;}
 }
 
  #region-main .hubcoursedownload:hover {background-color: rgb(248, 156, 57);}
+ 
+#page-content .region-content .userprofile ul {list-style-type: none;}
+
