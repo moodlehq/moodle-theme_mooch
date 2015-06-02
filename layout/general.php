@@ -70,6 +70,7 @@ echo $OUTPUT->doctype() ?>
                     </div>
                 </div>
             <?php } ?>
+            <?php echo $OUTPUT->context_header(); ?>
 
 <!-- END OF HEADER -->
 
