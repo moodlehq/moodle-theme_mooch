@@ -53,7 +53,7 @@ echo $OUTPUT->doctype() ?>
                             <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $OUTPUT->pix_url('mooch-banner', 'theme')?>" alt="Logo" /></a>
                         </div>
                         <div class="headermenu"><?php
-                            echo $OUTPUT->login_info();
+                            echo $OUTPUT->user_menu();
                                 //if (!empty($PAGE->layout_options['langmenu'])) {
                                     echo $OUTPUT->lang_menu();
                                 //}
