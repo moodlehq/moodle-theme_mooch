@@ -70,6 +70,12 @@ echo $OUTPUT->doctype() ?>
                     </div>
                 </div>
             <?php } ?>
+            <?php
+                if ($PAGE->bodyid == 'page-user-profile') {
+                    // Display user's name and profile picture.
+                    echo $OUTPUT->context_header();
+                }
+            ?>
 
 <!-- END OF HEADER -->
 
