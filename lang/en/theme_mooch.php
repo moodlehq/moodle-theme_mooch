@@ -28,26 +28,26 @@ $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 $string['choosereadme'] = '
 <div class="clearfix">
-	<div class="theme_screenshot">
+    <div class="theme_screenshot">
 
-		<h2>Mooch</h2>
-		<img src="mooch/pix/screenshot.jpg" />
+        <h2>Mooch</h2>
+        <img src="mooch/pix/screenshot.jpg" />
 
-		<h3>Theme Documentation:</h3>
-		<p><a href="http://docs.moodle.org/en/Themes">http://docs.moodle.org/en/Themes</a></p>
+        <h3>Theme Documentation:</h3>
+        <p><a href="http://docs.moodle.org/en/Themes">http://docs.moodle.org/en/Themes</a></p>
 
-		<h3>Report a bug:</h3>
-		<p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
-	</div>
+        <h3>Report a bug:</h3>
+        <p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
+    </div>
 
-	<div class="theme_description">
+    <div class="theme_description">
 
-		<h2>About</h2>
-		<p>Mooch is a theme based for Moodle Hub based on Arialist.</p>
+        <h2>About</h2>
+        <p>Mooch is a theme based for Moodle Hub based on Arialist.</p>
 
-		<h2>Tweaks</h2>
-		<p>This theme is built upon Arialist, Base and Canvas, three parent themes included in the Moodle core.</p>
-	</div>
+        <h2>Tweaks</h2>
+        <p>This theme is built upon Arialist, Base and Canvas, three parent themes included in the Moodle core.</p>
+    </div>
 </div>';
 
 $string['linkcolor'] = 'Link color';

@@ -3,21 +3,21 @@ $THEME->name = 'mooch';
 
 $THEME->parents = array(
     'arialist',
-	'canvas',
-	'base',
+    'canvas',
+    'base',
 );
 
 $THEME->sheets = array(
-	'core', 'style', 'sitebar'
+    'core', 'style', 'sitebar'
 );
 
 $THEME->parents_exclude_sheets = array(
-		'base'=>array(
-			'pagelayout',
-		),
-		'canvas'=>array(
-			'pagelayout',
-		),
+        'base'=>array(
+            'pagelayout',
+        ),
+        'canvas'=>array(
+            'pagelayout',
+        ),
 );
 
 $THEME->enable_dock = true;
@@ -93,7 +93,7 @@ $THEME->layouts = array(
         'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true),
     ),
     'embedded' => array(
-    	'theme' => 'canvas',
+        'theme' => 'canvas',
         'file' => 'embedded.php',
         'regions' => array(),
         'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true),
@@ -111,8 +111,8 @@ $THEME->layouts = array(
     ),
 );
 
-$THEME->larrow	= '&lang;';
+$THEME->larrow    = '&lang;';
 
-$THEME->rarrow	= '&rang;';
+$THEME->rarrow    = '&rang;';
 
 $THEME->csspostprocess = 'mooch_process_css';
