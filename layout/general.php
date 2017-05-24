@@ -23,7 +23,7 @@ echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes() ?>>
 <head>
     <title><?php echo $PAGE->title ?></title>
-    <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
+    <link rel="shortcut icon" href="<?php echo $OUTPUT->image_url('favicon', 'theme_mooch')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 </head>
