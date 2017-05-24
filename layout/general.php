@@ -50,7 +50,7 @@ echo $OUTPUT->doctype() ?>
                 <div id="page-header" class="inside">
                     <div id="page-header-wrapper" class="wrapper clearfix">
                         <div id="header-left">
-                            <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $OUTPUT->pix_url('mooch-banner', 'theme')?>" alt="Logo" /></a>
+                            <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $OUTPUT->image_url('mooch-banner', 'theme_mooch')?>" alt="Logo" /></a>
                         </div>
                         <div class="headermenu"><?php
                             echo $OUTPUT->user_menu();
