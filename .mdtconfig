@@ -1,0 +1,5 @@
+MDTSITE=moodle.net
+MDTVERSION=3.3
+MDTCOMPONENT=theme_mooch
+MDTRELPATH=theme/mooch/
+MDTEXPORT=origin/master
