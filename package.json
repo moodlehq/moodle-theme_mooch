@@ -1,0 +1,11 @@
+{
+  "name": "moodle-theme_mooch",
+  "private": true,
+  "description": "Node package allowing to use Grunt.js in this theme",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-less": "1.1.0",
+    "grunt-contrib-watch": "0.6.1"
+  }
+}

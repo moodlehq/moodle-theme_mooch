@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_mooch';
-$plugin->version = 2016011300;
+$plugin->version = 2017070900;
 $plugin->requires = 2014111005;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = [
